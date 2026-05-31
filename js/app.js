@@ -1419,6 +1419,22 @@
     document.getElementById('mobile-drawer').setAttribute('aria-hidden', 'true');
   }
 
+  // ===== FOOTER EXPAND/COLLAPSE (click toggle for mobile) =====
+  function initFooter() {
+    const footer = document.getElementById('site-footer');
+    if (!footer) return;
+    footer.addEventListener('click', function(e) {
+      // Don't toggle if clicking a button or link inside
+      if (e.target.closest('button') || e.target.closest('a')) return;
+      footer.classList.toggle('expanded');
+    });
+    // Wire up the About button inside expanded footer
+    const expandedAboutBtn = footer.querySelector('.footer-about-btn');
+    if (expandedAboutBtn) {
+      expandedAboutBtn.addEventListener('click', openAbout);
+    }
+  }
+
   // ===== EVENT BINDING =====
   function bindEvents() {
     // Section tabs (desktop) — locked tabs are no-ops
@@ -1599,6 +1615,7 @@
   function init() {
     initMap();
     bindEvents();
+    initFooter();
     setTextSize('standard');
     loadPrefs();          // restore saved settings from localStorage
     loadSection('acts');

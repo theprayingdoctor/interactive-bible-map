@@ -120,16 +120,28 @@
   </button>
 
   <!-- Footer (fixed, bottom of map) -->
-  <footer class="site-footer" role="contentinfo">
-    <div class="footer-logo-row">
-      <img src="images/logo2.svg" alt="ThePrayingDoctor Logo" class="footer-logo">
+  <footer class="site-footer" id="site-footer" role="contentinfo">
+    <!-- Collapsed: always visible -->
+    <div class="footer-collapsed">
+      <span class="footer-credit">
+        Scripture &amp; Ancient locations are scholarly approximations. &nbsp;·&nbsp;
+        <button class="footer-link-btn" id="about-btn">About &amp; Disclaimers</button>
+        &nbsp;·&nbsp;
+        <span class="footer-expand-hint">▲ More</span>
+      </span>
     </div>
-    <div class="footer-lines">
-      <span class="footer-line">Created by ThePrayingDoctor</span>
-      <span class="footer-line">Questions? <a href="mailto:contact@theprayingdoctor.com" class="footer-link">contact@theprayingdoctor.com</a></span>
-      <span class="footer-line">Scripture quotations are from the King James Version (KJV) of the Bible, public domain.</span>
-      <span class="footer-line">Ancient locations are scholarly approximations.</span>
-      <span class="footer-line"><button class="footer-link-btn" id="about-btn">About &amp; Disclaimers</button></span>
+    <!-- Expanded: shown on hover or click -->
+    <div class="footer-expanded">
+      <div class="footer-logo-row">
+        <img src="images/logo5.svg" alt="ThePrayingDoctor Logo" class="footer-logo">
+      </div>
+      <div class="footer-lines">
+        <span class="footer-line">Created by ThePrayingDoctor</span>
+        <span class="footer-line">Questions? <a href="mailto:contact@theprayingdoctor.com" class="footer-link">contact@theprayingdoctor.com</a></span>
+        <span class="footer-line">Scripture quotations are from the King James Version (KJV) of the Bible, public domain.</span>
+        <span class="footer-line">Ancient locations are scholarly approximations.</span>
+        <span class="footer-line"><button class="footer-link-btn footer-about-btn">About &amp; Disclaimers</button></span>
+      </div>
     </div>
   </footer>
 

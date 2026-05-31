@@ -1341,10 +1341,58 @@ body.text-xlarge {
 
 .footer-link-btn:hover { color: var(--gold); }
 
+/* Footer collapsed state */
+.footer-collapsed {
+  text-align: center;
+  padding: 2px 0;
+}
+
+.footer-expand-hint {
+  font-size: 0.65rem;
+  color: rgba(201, 168, 76, 0.5);
+  letter-spacing: 0.04em;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.site-footer:hover .footer-expand-hint,
+.site-footer.expanded .footer-expand-hint {
+  color: var(--gold);
+}
+
+/* Footer expanded state */
+.footer-expanded {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.35s ease, opacity 0.35s ease;
+  opacity: 0;
+}
+
+.site-footer:hover .footer-expanded,
+.site-footer.expanded .footer-expanded {
+  max-height: 280px;
+  opacity: 1;
+}
+
+/* Flip arrow when expanded */
+.site-footer:hover .footer-expand-hint::before,
+.site-footer.expanded .footer-expand-hint::before {
+  content: '▼ Less';
+}
+.footer-expand-hint::before {
+  content: '▲ More';
+}
+.footer-expand-hint {
+  font-size: 0;
+}
+.footer-expand-hint::before {
+  font-size: 0.65rem;
+}
+
 .footer-logo-row {
   display: flex;
   justify-content: center;
-  margin-bottom: 5px;
+  margin: 6px 0 4px;
 }
 
 .footer-logo {
@@ -1365,7 +1413,8 @@ body.text-xlarge {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1px;
+  gap: 2px;
+  padding-bottom: 6px;
 }
 
 .footer-line {
@@ -1385,7 +1434,7 @@ body.text-xlarge {
 .footer-link:hover { color: var(--gold); }
 
 /* Adjust map bottom to not hide under footer */
-#map { bottom: 220px; }
+#map { bottom: 30px; }
 
 /* ===== ABOUT MODAL ===== */
 .modal-overlay {
