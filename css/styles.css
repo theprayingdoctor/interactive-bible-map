@@ -1341,24 +1341,14 @@ body.text-xlarge {
 
 .footer-link-btn:hover { color: var(--gold); }
 
-.footer-attribution {
-  display: block;
-  font-size: 0.72rem;
-  color: rgba(249, 244, 236, 0.55);
-  letter-spacing: 0.02em;
-  margin-top: 2px;
-  text-align: center;
-}
-
 .footer-logo-row {
   display: flex;
   justify-content: center;
-  margin-top: 5px;
-  padding-bottom: 3px;
+  margin-bottom: 5px;
 }
 
 .footer-logo {
-  height: 80px;
+  height: 60px;
   width: auto;
   opacity: 0.88;
   transition: opacity 0.2s;
@@ -1371,6 +1361,20 @@ body.text-xlarge {
   opacity: 1;
 }
 
+.footer-lines {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1px;
+}
+
+.footer-line {
+  font-size: 0.70rem;
+  color: rgba(249, 244, 236, 0.55);
+  letter-spacing: 0.02em;
+  text-align: center;
+}
+
 .footer-link {
   color: rgba(201, 168, 76, 0.75);
   text-decoration: underline;
@@ -1381,7 +1385,7 @@ body.text-xlarge {
 .footer-link:hover { color: var(--gold); }
 
 /* Adjust map bottom to not hide under footer */
-#map { bottom: 110px; }
+#map { bottom: 160px; }
 
 /* ===== ABOUT MODAL ===== */
 .modal-overlay {
