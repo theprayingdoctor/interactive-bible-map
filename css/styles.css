@@ -1400,9 +1400,6 @@ body.text-xlarge {
   width: auto;
   opacity: 0.88;
   transition: opacity 0.2s;
-  background-color: rgba(27, 58, 92, 0.88);
-  border-radius: 4px;
-  padding: 2px 8px;
 }
 
 .footer-logo:hover {
