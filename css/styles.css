@@ -1342,22 +1342,29 @@ body.text-xlarge {
 .footer-link-btn:hover { color: var(--gold); }
 
 .footer-attribution {
-  display: flex;
-  align-items: center;
-  gap: 8px;
+  display: block;
   font-size: 0.72rem;
   color: rgba(249, 244, 236, 0.55);
   letter-spacing: 0.02em;
-  margin-top: 3px;
+  margin-top: 2px;
+  text-align: center;
+}
+
+.footer-logo-row {
+  display: flex;
   justify-content: center;
-  flex-wrap: wrap;
+  margin-top: 5px;
+  padding-bottom: 3px;
 }
 
 .footer-logo {
-  height: 28px;
+  height: 40px;
   width: auto;
-  opacity: 0.85;
+  opacity: 0.88;
   transition: opacity 0.2s;
+  background-color: rgba(27, 58, 92, 0.88);
+  border-radius: 4px;
+  padding: 2px 8px;
 }
 
 .footer-logo:hover {
@@ -1374,7 +1381,7 @@ body.text-xlarge {
 .footer-link:hover { color: var(--gold); }
 
 /* Adjust map bottom to not hide under footer */
-#map { bottom: 40px; }
+#map { bottom: 64px; }
 
 /* ===== ABOUT MODAL ===== */
 .modal-overlay {
