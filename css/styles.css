@@ -1354,9 +1354,9 @@ body.text-xlarge {
 }
 
 .footer-logo {
-  height: 20px;
+  height: 28px;
   width: auto;
-  opacity: 0.8;
+  opacity: 0.85;
   transition: opacity 0.2s;
 }
 
