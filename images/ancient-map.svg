@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+  <!-- Warm parchment tint overlay — placeholder until real historical map is added.
+       Replace images/ancient-map.jpg with a public domain historical map image
+       from Wikimedia Commons (search: "Bible lands map", filter pre-1928 publications). -->
+  <defs>
+    <radialGradient id="vignette" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#d4a855" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#8b5e1a" stop-opacity="0.28"/>
+    </radialGradient>
+  </defs>
+  <rect width="100" height="100" fill="#c8a05a" opacity="0.18"/>
+  <rect width="100" height="100" fill="url(#vignette)"/>
+</svg>

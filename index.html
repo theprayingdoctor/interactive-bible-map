@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Interactive Bible Map — Explore Bible History Through Time and Place</title>
+
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,600;0,700;1,400;1,600&family=EB+Garamond:ital,wght@0,400;0,600;1,400&family=Noto+Sans+KR:wght@400;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/styles.css" />
+
+  <style>
+    body { display: none; }
+    body.authenticated { display: block; }
+  </style>
+</head>
+<body>
+
+<script>
+  (function() {
+    let isAuthenticated = false;
+    while (!isAuthenticated) {
+      const password = prompt("Enter password to access this site:");
+      if (password === "ibm") {
+        isAuthenticated = true;
+        document.body.classList.add("authenticated");
+      } else if (password === null) {
+        // User clicked Cancel
+        window.location.href = "about:blank";
+        break;
+      }
+    }
+  })();
+</script>
+
+  <!-- Top Navigation Bar -->
+  <header class="nav-bar" role="banner">
+    <div class="nav-brand">
+      <span class="nav-title">Interactive Bible Map</span>
+      <span class="nav-subtitle">Explore Bible History Through Time and Place</span>
+    </div>
+
+    <nav class="nav-sections" role="navigation" aria-label="Bible section selector">
+      <button class="section-tab active" data-section="acts" aria-pressed="true">Early Church (Acts)</button>
+      <button class="section-tab locked" data-section="jesus" aria-pressed="false" title="Phase 2 — Coming Soon">Jesus' Ministry <span class="lock-badge">🔒</span></button>
+      <button class="section-tab locked" data-section="letters" aria-pressed="false" title="Phase 2 — Coming Soon">Paul's Letters <span class="lock-badge">🔒</span></button>
+    </nav>
+
+    <div class="nav-controls">
+      <div class="layer-toggle" role="group" aria-label="Map layer">
+        <button class="layer-btn active" id="btn-ancient" aria-pressed="true">Ancient</button>
+        <span class="toggle-divider">|</span>
+        <button class="layer-btn" id="btn-modern" aria-pressed="false">Modern</button>
+      </div>
+
+      <div class="music-toggle" role="group" aria-label="Background music">
+        <button class="music-btn" id="music-toggle-btn" aria-label="Toggle background music">
+          <span class="music-icon">🔇</span>
+        </button>
+      </div>
+
+      <div class="text-size-control" role="group" aria-label="Text size">
+        <button class="size-btn" data-size="standard" aria-pressed="true" title="Standard text size">A</button>
+        <button class="size-btn" data-size="large" aria-pressed="false" title="Large text size">A</button>
+        <button class="size-btn" data-size="xlarge" aria-pressed="false" title="Extra large text size">A</button>
+      </div>
+
+      <div class="lang-toggle" id="lang-toggle" role="group" aria-label="Language">
+        <button class="lang-btn active" data-lang="en" aria-pressed="true">EN</button>
+        <span class="toggle-divider">|</span>
+        <button class="lang-btn" data-lang="ko" aria-pressed="false">한국어</button>
+      </div>
+
+      <button class="settings-btn" id="settings-btn" aria-label="Open settings" title="Settings" aria-expanded="false">⚙</button>
+
+      <!-- Mobile hamburger -->
+      <button class="hamburger" id="hamburger-btn" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile nav drawer -->
+  <div class="mobile-drawer" id="mobile-drawer" aria-hidden="true">
+    <div class="drawer-section-label">Section</div>
+    <button class="drawer-tab active" data-section="acts">Early Church (Acts)</button>
+    <button class="drawer-tab locked" data-section="jesus">Jesus' Ministry 🔒</button>
+    <button class="drawer-tab locked" data-section="letters">Paul's Letters 🔒</button>
+    <div class="drawer-divider"></div>
+    <div class="drawer-section-label">Map Layer</div>
+    <button class="drawer-layer active" data-layer="ancient">Ancient World</button>
+    <button class="drawer-layer" data-layer="modern">Modern World</button>
+    <div class="drawer-divider"></div>
+    <div class="drawer-section-label" id="drawer-lang-label">Language</div>
+    <button class="drawer-lang active" data-lang="en">English</button>
+    <button class="drawer-lang" data-lang="ko">한국어</button>
+  </div>
+  <div class="drawer-overlay" id="drawer-overlay"></div>
+
+  <!-- Map Container -->
+  <main id="map" role="main" aria-label="Interactive Bible map"></main>
+
+  <!-- Jump-to Panel -->
+  <div class="jump-panel" id="jump-panel" aria-hidden="true">
+    <div class="jump-panel-header">
+      <span class="jump-panel-title" id="jump-panel-title">Jump to Stop</span>
+      <button class="jump-panel-close" id="jump-panel-close" aria-label="Close jump panel">✕</button>
+    </div>
+    <ul class="jump-list" id="jump-list" role="list"></ul>
+  </div>
+  <button class="start-btn" id="start-btn" aria-label="Start from the beginning" title="Go to first location">↻ Start</button>
+  <button class="jump-toggle-btn" id="jump-toggle-btn" aria-label="Jump to stop" aria-expanded="false">
+    <span class="jump-label">Go to #</span>
+  </button>
+
+  <!-- Footer (fixed, bottom of map) -->
+  <footer class="site-footer" role="contentinfo">
+    <span class="footer-credit">
+      Scripture quotations are from the King James Version (KJV) of the Bible, public domain. &nbsp;·&nbsp;
+      Ancient locations are scholarly approximations.
+      &nbsp;·&nbsp;
+      <button class="footer-link-btn" id="about-btn">About &amp; Disclaimers</button>
+    </span>
+    <span class="footer-attribution">
+      Created by ThePrayingDoctor &nbsp;·&nbsp;
+      Questions? <a href="mailto:contact@theprayingdoctor.com" class="footer-link">Contact us</a>
+    </span>
+  </footer>
+
+  <!-- About / Disclaimer Modal -->
+  <div class="modal-overlay" id="about-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="about-title">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h2 class="modal-title" id="about-title">About Interactive Bible Map</h2>
+        <button class="popup-close" id="about-close" aria-label="Close about panel">✕</button>
+      </div>
+      <div class="modal-body">
+        <p>Interactive Bible Map is a free ministry resource built to help people explore Scripture geographically and chronologically. There are no ads, no accounts, and no monetization of any kind.</p>
+        <p>Built under <strong>ThePrayingDoctor</strong> ministry. <em>"Come and see." — John 1:46</em></p>
+
+        <h3>Disclaimers</h3>
+        <p>Ancient locations are based on scholarly consensus and are <strong>approximate</strong>. Exact sites of some Biblical events remain debated by historians and archaeologists.</p>
+        <p>Gospel chronology follows the general harmony of the Gospels. Scholarly opinion on the precise sequence of Jesus' ministry varies; this map presents one widely-held reconstruction.</p>
+        <p>This resource is designed as a <strong>study aid</strong>, not a substitute for Scripture. All passages should be read in their full Biblical context.</p>
+
+        <h3>Scripture</h3>
+        <p>All Scripture quotations are from the <strong>King James Version (KJV)</strong> of the Bible, which is in the public domain.</p>
+
+        <h3>Map Data</h3>
+        <p>Ancient terrain tiles: &copy; <a href="https://www.esri.com" target="_blank" rel="noopener">Esri</a> — Esri, USGS, NOAA (World Shaded Relief). Ancient place-name labels are derived from Biblical and scholarly sources; locations are approximate.</p>
+        <p>Modern map tiles: &copy; <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a> contributors, &copy; <a href="https://carto.com/attributions" target="_blank" rel="noopener">CARTO</a>.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Settings Panel -->
+  <div class="settings-panel" id="settings-panel" aria-hidden="true">
+    <div class="settings-header">
+      <span class="settings-title">Settings</span>
+      <button class="settings-close" id="settings-close" aria-label="Close settings">✕</button>
+    </div>
+    <div class="settings-body">
+      <div class="settings-row">
+        <span class="settings-label">Default View</span>
+        <div class="settings-opts">
+          <button class="settings-opt active" data-pref="defaultMode" data-val="summary">Summary First</button>
+          <button class="settings-opt" data-pref="defaultMode" data-val="bible">Bible First</button>
+          <button class="settings-opt" data-pref="defaultMode" data-val="both">Both</button>
+        </div>
+      </div>
+      <div class="settings-row">
+        <span class="settings-label">Panel Opacity</span>
+        <div class="settings-opts">
+          <button class="settings-opt active" data-pref="opacityMode" data-val="semi">Semi-transparent</button>
+          <button class="settings-opt" data-pref="opacityMode" data-val="opaque">Fully Opaque</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Left Panel — Summary & Navigation -->
+  <div class="popup-left" id="popup-left" aria-hidden="true" role="dialog" aria-modal="false" aria-labelledby="popup-location-name">
+    <div class="popup-drag-handle" id="popup-left-handle" title="Drag to reposition"></div>
+    <div class="popup-header">
+      <div class="popup-header-text">
+        <h2 class="popup-location-name" id="popup-location-name"></h2>
+        <div class="popup-modern-name" id="popup-modern-name"></div>
+      </div>
+      <button class="popup-close" id="popup-close" aria-label="Close">✕</button>
+    </div>
+    <div class="chapter-tabs" id="chapter-tabs" style="display:none"></div>
+    <div class="popup-body" id="popup-body">
+      <div class="popup-title" id="popup-title"></div>
+      <div class="popup-summary" id="popup-summary"></div>
+      <div class="popup-meta">
+        <span class="popup-date" id="popup-date"></span>
+        <div id="popup-footer-youtube"></div>
+      </div>
+    </div>
+    <div class="popup-footer">
+      <div class="popup-nav">
+        <button class="popup-nav-btn" id="popup-prev" aria-label="Previous location">← Previous</button>
+        <span class="popup-progress" id="popup-progress"></span>
+        <button class="popup-nav-btn" id="popup-next" aria-label="Next location">Next →</button>
+      </div>
+    </div>
+    <div class="popup-resize-handle" id="popup-left-resize" title="Drag to resize"></div>
+  </div>
+
+  <!-- Right Panel — Scripture -->
+  <div class="popup-right" id="popup-right" aria-hidden="true">
+    <div class="popup-drag-handle" id="popup-right-handle" title="Drag to reposition"></div>
+    <div class="popup-right-header">
+      <span class="popup-right-ref" id="popup-right-ref"></span>
+      <button class="popup-close popup-right-close" id="popup-right-close" aria-label="Close scripture panel">✕</button>
+    </div>
+    <div class="popup-right-body" id="popup-right-body">
+      <div class="scripture-text" id="scripture-text"></div>
+      <div id="popup-right-footer-youtube"></div>
+      <div class="scripture-page-nav" id="scripture-page-nav" style="display:none">
+        <button class="scripture-page-btn" id="scripture-prev-page" aria-label="Previous scripture page">‹ Prev</button>
+        <span class="scripture-page-num" id="scripture-page-num"></span>
+        <button class="scripture-page-btn" id="scripture-next-page" aria-label="Next scripture page">Next ›</button>
+      </div>
+      <div class="scripture-ref" id="scripture-ref"></div>
+    </div>
+    <div class="popup-resize-handle" id="popup-right-resize" title="Drag to resize"></div>
+  </div>
+
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+  <!-- App data and logic -->
+  <script src="js/locations.js"></script>
+  <script src="js/i18n-ko.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
