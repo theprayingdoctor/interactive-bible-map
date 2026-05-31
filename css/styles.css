@@ -1348,7 +1348,7 @@ body.text-xlarge {
 }
 
 .footer-logo {
-  height: 60px;
+  height: 120px;
   width: auto;
   opacity: 0.88;
   transition: opacity 0.2s;
@@ -1385,7 +1385,7 @@ body.text-xlarge {
 .footer-link:hover { color: var(--gold); }
 
 /* Adjust map bottom to not hide under footer */
-#map { bottom: 160px; }
+#map { bottom: 220px; }
 
 /* ===== ABOUT MODAL ===== */
 .modal-overlay {
