@@ -1342,11 +1342,26 @@ body.text-xlarge {
 .footer-link-btn:hover { color: var(--gold); }
 
 .footer-attribution {
-  display: block;
+  display: flex;
+  align-items: center;
+  gap: 8px;
   font-size: 0.72rem;
   color: rgba(249, 244, 236, 0.55);
   letter-spacing: 0.02em;
-  margin-top: 2px;
+  margin-top: 3px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.footer-logo {
+  height: 20px;
+  width: auto;
+  opacity: 0.8;
+  transition: opacity 0.2s;
+}
+
+.footer-logo:hover {
+  opacity: 1;
 }
 
 .footer-link {
