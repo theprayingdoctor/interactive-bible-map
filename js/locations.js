@@ -11,34 +11,35 @@ const LOCATIONS = {
       type: "narrative",
       name: "Jerusalem",
       modernName: "Jerusalem, Israel",
+      journey: "Early Church",
       lat: 31.7750,
       lng: 35.2300,
       chapters: [
         {
           title: "The Ascension — Waiting for the Promise",
-          summary: "Before the story of the church begins, Jesus appears to his disciples over forty days after the resurrection — eating with them, speaking about the kingdom of God, and giving final instructions. He tells them to wait in Jerusalem for the Holy Spirit, the promise of the Father. When they ask if this is the moment he will restore the kingdom to Israel, he redirects their attention entirely: the times are not theirs to know. Their calling is to be witnesses — beginning in Jerusalem, then Judea, then Samaria, then to the ends of the earth. Then, as they watch, he is taken up into a cloud. Two angels appear: why are you looking into the sky? He will come back the same way you saw him go. The disciples return to Jerusalem — not scattered, not in despair — and gather in the upper room to pray.",
+          summary: "Before the story of the church began, Jesus appeared to his disciples over forty days after the resurrection — eating with them, speaking about the kingdom of God, and giving final instructions. He told them to wait in Jerusalem for the Holy Spirit, the promise of the Father. When they asked if this was the moment he would restore the kingdom to Israel, he redirected their attention: the times were not theirs to know. Their calling was to be witnesses — beginning in Jerusalem, then Judea, then Samaria, then to the ends of the earth. Then, as they watched, he was taken up into a cloud. Two angels appeared: why were they gazing into the sky? He would come back the same way they saw him go. The disciples returned to Jerusalem — not scattered, not in despair — and gathered in the upper room to pray.",
           kjvText: "And, being assembled together with them, commanded them that they should not depart from Jerusalem, but wait for the promise of the Father, which, saith he, ye have heard of me. For John truly baptized with water; but ye shall be baptized with the Holy Ghost not many days hence. When they therefore were come together, they asked of him, saying, Lord, wilt thou at this time restore again the kingdom to Israel? And he said unto them, It is not for you to know the times or the seasons, which the Father hath put in his own power. But ye shall receive power, after that the Holy Ghost is come upon you: and ye shall be witnesses unto me both in Jerusalem, and in all Judaea, and in Samaria, and unto the uttermost part of the earth. And when he had spoken these things, while they beheld, he was taken up; and a cloud received him out of their sight. And while they looked stedfastly toward heaven as he went up, behold, two men stood by them in white apparel; Which also said, Ye men of Galilee, why stand ye gazing up into heaven? this same Jesus, which is taken up from you into heaven, shall so come in like manner as ye have seen him go into heaven. Then returned they unto Jerusalem from the mount called Olivet, which is from Jerusalem a sabbath day's journey. And when they were come in, they went up into an upper room, where abode both Peter, and James, and John, and Andrew, Philip, and Thomas, Bartholomew, and Matthew, James the son of Alphaeus, and Simon Zelotes, and Judas the brother of James. These all continued with one accord in prayer and supplication, with the women, and Mary the mother of Jesus, and with his brethren.",
           kjvRef: "Acts 1:4–14",
           scriptureRef: "Acts 1:1–26",
-          approximateDate: "~30 AD",
+          approximateDate: "early 30s AD",
           youtubeUrls: ["https://www.youtube.com/watch?v=QFLHNYZ-an4"]
         },
         {
           title: "Pentecost — The Church is Born",
-          summary: "Fifty days after the resurrection, the Holy Spirit falls on 120 disciples gathered in Jerusalem. Tongues of fire appear, a sound like a rushing wind fills the house, and Peter stands to preach with boldness he had never shown before. Three thousand people are baptized in a single day. The church does not begin with a plan — it begins with fire.",
+          summary: "On the day of Pentecost, the believers were gathered in one place and suddenly a sound like a rushing wind filled the entire house, tongues of fire came to rest on each of them, and all were filled with the Holy Spirit. Peter stood to preach with great boldness, and about three thousand people accepted his message and were baptized that day. The movement of the church was marked from the beginning by the powerful coming of the Holy Spirit, not by human planning.",
           kjvText: "And when the day of Pentecost was fully come, they were all with one accord in one place. And suddenly there came a sound from heaven as of a rushing mighty wind, and it filled all the house where they were sitting. And there appeared unto them cloven tongues like as of fire, and it sat upon each of them. And they were all filled with the Holy Ghost, and began to speak with other tongues, as the Spirit gave them utterance.",
           kjvRef: "Acts 2:1–4",
           scriptureRef: "Acts 2:1–41",
-          approximateDate: "~30 AD",
+          approximateDate: "early 30s AD",
           youtubeUrls: ["https://youtu.be/lBXWl0DWkZM?si=iEh9eFX3_UbUGQph"]
         },
         {
-          title: "Early Community — Signs and Wonders",
-          summary: "The new community of believers devotes itself to the apostles' teaching, fellowship, breaking of bread, and prayer. Miracles happen at the temple gate — a man lame from birth walks for the first time. The church grows to five thousand. Despite arrests and threats, the apostles cannot be silenced.",
+          title: "Signs, Boldness, and Holy Fear",
+          summary: "Peter and John healed a man lame from birth at the temple gate, not by their own power but in the name of Jesus Christ. Peter preached that Jesus, crucified and risen, was the promised Messiah, and called Israel to repent. The apostles were arrested for preaching the resurrection, but Peter declared there was salvation in no one else. The believers prayed for boldness, and the Holy Spirit strengthened their witness. The church was marked by unity and radical generosity, with no one in need. God also brought holy fear through the judgment of Ananias and Sapphira for lying to the Holy Spirit. The council had the apostles flogged and ordered them to stop speaking in the name of Jesus — and they left rejoicing that they were counted worthy to suffer for his name. Despite opposition, the word of God continued to spread with power.",
           kjvText: "And they continued stedfastly in the apostles' doctrine and fellowship, and in breaking of bread, and in prayers. And fear came upon every soul: and many wonders and signs were done by the apostles. And all that believed were together, and had all things common.",
           kjvRef: "Acts 2:42–44",
           scriptureRef: "Acts 3–5",
-          approximateDate: "~30–31 AD",
+          approximateDate: "early 30s AD",
           youtubeUrls: [
             "https://www.youtube.com/watch?v=UcXXhmFt_aw",
             "https://www.youtube.com/watch?v=z-tMnLNEIhM",
@@ -47,11 +48,11 @@ const LOCATIONS = {
         },
         {
           title: "Stephen's Martyrdom — The First Death",
-          summary: "Stephen, a deacon full of faith and power, performs signs and preaches with such wisdom that the religious leaders cannot answer him. They bring false charges, and as he stands before the council, his face shines like an angel's. He preaches the full sweep of Israel's history, accusing them of always resisting the Holy Spirit. As stones fall on him, he sees Jesus standing at the right hand of God — and forgives his killers. Among those watching and approving: a young man named Saul.",
+          summary: "Stephen, one of the Seven chosen to serve the Jerusalem community, was full of faith and power, and performed signs and preached with such wisdom that the religious leaders could not answer him. They brought false charges, and as he stood before the council, his face shone like an angel's. He preached the full sweep of Israel's history, accusing them of always resisting the Holy Spirit. As stones fell on him, he saw Jesus standing at the right hand of God — and forgave his killers. Among those watching and approving: a young man named Saul.",
           kjvText: "And he kneeled down, and cried with a loud voice, Lord, lay not this sin to their charge. And when he had said this, he fell asleep. And Saul was consenting unto his death.",
           kjvRef: "Acts 7:60–8:1",
           scriptureRef: "Acts 6–7",
-          approximateDate: "~33–34 AD",
+          approximateDate: "early–mid 30s AD",
           youtubeUrls: ["https://www.youtube.com/watch?v=0LjsilSxhlI&t=2s"]
         }
       ]
@@ -63,14 +64,15 @@ const LOCATIONS = {
       type: "narrative",
       name: "Samaria",
       modernName: "West Bank region, Palestinian Territory",
+      journey: "Philip's Ministry",
       lat: 32.2667,
       lng: 35.2000,
       title: "Philip in Samaria",
-      summary: "Persecution scatters the Jerusalem church, but this only spreads the gospel. Philip goes to the city of Samaria — a region Jews had despised for generations — and proclaims Christ with such power that the city erupts in joy. Peter and John come to pray for the new believers, and the Holy Spirit falls on the Samaritans just as on the Jews at Pentecost. The barrier is breaking.",
+      summary: "Persecution scattered the Jerusalem church — with Saul among its chief instigators, entering homes and dragging believers to prison. But this only spread the gospel further. Philip went to the city of Samaria — a region Jews had despised for generations — and proclaimed Christ with such power that the city experienced great joy. Unclean spirits were cast out, and the paralyzed and lame were healed. Many in the city, who had previously been amazed by Simon the sorcerer — a man who claimed to be 'some great one' — turned to Christ in faith. Even Simon himself believed and was baptized. But when Peter and John came from Jerusalem and laid hands on the new believers, praying for them to receive the Holy Spirit, Simon offered them money for the power to give the Spirit. Peter rebuked him sharply — the gift of God was not for purchase. The Spirit that came upon these Samaritans was the same Spirit who had fallen at Pentecost, and the long-standing wall between Jew and Samaritan began to break.",
       kjvText: "Then Philip went down to the city of Samaria, and preached Christ unto them. And the people with one accord gave heed unto those things which Philip spake, hearing and seeing the miracles which he did. And there was great joy in that city.",
       kjvRef: "Acts 8:5–8",
       scriptureRef: "Acts 8:1–25",
-      approximateDate: "~34–35 AD"
+      approximateDate: "mid–late 30s AD"
     },
     {
       id: 5,
@@ -79,14 +81,15 @@ const LOCATIONS = {
       type: "narrative",
       name: "Road to Gaza",
       modernName: "Southern Israel / Gaza region",
+      journey: "Philip's Ministry",
       lat: 31.5000,
       lng: 34.7000,
       title: "The Ethiopian Eunuch",
-      summary: "An angel sends Philip south onto a desert road toward Gaza. There he finds a high official of the Ethiopian queen, sitting in his chariot reading aloud from Isaiah — the passage about the suffering servant. Philip runs alongside, asks if he understands what he's reading, and is invited in. He explains that Isaiah is speaking of Jesus. Before they travel far, water appears by the road, and the Ethiopian asks: what is stopping me from being baptized? Nothing. He goes on his way rejoicing. The gospel has reached Africa.",
+      summary: "An angel sent Philip south onto a desert road toward Gaza. There he found a high official of the Ethiopian queen, sitting in his chariot reading aloud from Isaiah — the passage about the suffering servant. Philip ran alongside, asked if he understood what he was reading, and was invited in. He explained that Isaiah was speaking of Jesus. Before they traveled far, they came to water by the road, and the Ethiopian asked: what was stopping him from being baptized? The Ethiopian confessed faith in Christ, was baptized, and went on his way rejoicing.",
       kjvText: "And he answered and said, I believe that Jesus Christ is the Son of God. And he commanded the chariot to stand still: and they went down both into the water, both Philip and the eunuch; and he baptized him.",
       kjvRef: "Acts 8:37–38",
       scriptureRef: "Acts 8:26–40",
-      approximateDate: "~34–35 AD"
+      approximateDate: "mid–late 30s AD"
     },
     {
       id: 6,
@@ -95,14 +98,15 @@ const LOCATIONS = {
       type: "narrative",
       name: "Damascus",
       modernName: "Damascus, Syria",
+      journey: "Saul's Conversion",
       lat: 33.5138,
       lng: 36.2765,
       title: "Saul's Conversion",
-      summary: "Saul of Tarsus — brilliant, zealous, and murderous toward Christians — receives letters authorizing him to arrest believers in Damascus and drag them to Jerusalem. On the road, a light from heaven blinds him and a voice asks: 'Saul, Saul, why do you persecute me?' The risen Jesus identifies himself to the man who had been destroying his church. Saul arrives in Damascus blind, fasting, and waiting. Three days later, a disciple named Ananias — who had every reason to fear Saul — comes to him in obedience to God, calls him 'brother,' and his sight returns.",
+      summary: "Saul of Tarsus — brilliant, zealous, and violently opposed to Christians — received letters authorizing him to arrest followers of the Way in Damascus and bring them bound to Jerusalem. On the road, a light from heaven suddenly blinded him, and a voice said: 'Saul, Saul, why do you persecute me?' The risen Jesus revealed himself as the one Saul had been opposing in his persecution of the church. Saul arrived in Damascus blind, fasting, and waiting for further instruction. After three days, a disciple named Ananias — sent by God despite his fear — came to him, called him 'brother Saul,' and laid hands on him so that his sight was restored. Saul was baptized and immediately began proclaiming Jesus in the synagogues, declaring him to be the Son of God and confounding those who heard him.",
       kjvText: "And Saul arose from the earth; and when his eyes were opened, he saw no man: but they led him by the hand, and brought him into Damascus. And he was three days without sight, and neither did eat nor drink.",
       kjvRef: "Acts 9:8–9",
       scriptureRef: "Acts 9:1–22",
-      approximateDate: "~34–36 AD"
+      approximateDate: "mid–late 30s AD"
     },
     {
       id: 7,
@@ -111,14 +115,15 @@ const LOCATIONS = {
       type: "narrative",
       name: "Joppa",
       modernName: "Jaffa, Tel Aviv, Israel",
+      journey: "Peter's Ministry",
       lat: 32.0549,
       lng: 34.7506,
       title: "Peter's Vision Begins",
-      summary: "Peter is staying in Joppa at the house of Simon the tanner — already a culturally unusual choice — when he goes to the rooftop to pray at noon. He sees a vision of a sheet descending from heaven filled with animals considered unclean by Jewish law, and hears a voice: 'Rise, Peter; kill and eat.' He refuses three times. Three times the voice replies: 'What God hath cleansed, that call not thou common.' He doesn't yet understand what it means. But messengers from Caesarea are already at the gate.",
+      summary: "Peter was staying in Joppa at the house of Simon the tanner — already a culturally unusual choice — when he went up to the rooftop to pray around midday. He saw a vision of a sheet descending from heaven filled with animals considered unclean under Jewish law, and heard a voice: 'Rise, Peter; kill and eat.' He refused, and the voice came again, repeating the command. Each time Peter resisted, the response came: 'What God has cleansed, do not call common.' He did not yet understand what the vision meant. Meanwhile, messengers from Caesarea were arriving at the house.",
       kjvText: "And he became very hungry, and would have eaten: but while they made ready, he fell into a trance, And saw heaven opened, and a certain vessel descending upon him, as it had been a great sheet knit at the four corners, and let down to the earth.",
       kjvRef: "Acts 10:10–11",
       scriptureRef: "Acts 10:1–23",
-      approximateDate: "~40 AD"
+      approximateDate: "late 30s to early 40s AD"
     },
     {
       id: 8,
@@ -127,14 +132,15 @@ const LOCATIONS = {
       type: "narrative",
       name: "Caesarea",
       modernName: "Caesarea, Israel",
+      journey: "Peter's Ministry",
       lat: 32.5026,
       lng: 34.8940,
       title: "Cornelius — Gentiles Receive the Spirit",
-      summary: "Cornelius is a Roman centurion — devout, generous, and praying — who receives a vision directing him to send for Peter. When Peter arrives and begins to speak, the Holy Spirit falls on the Gentiles present just as he had fallen on the Jewish believers at Pentecost. Peter and the Jewish believers with him are astonished. The proof is undeniable: God has given the same gift to the Gentiles. Peter orders them to be baptized. The gospel has crossed the deepest social wall of the ancient world.",
+      summary: "Cornelius was a Roman centurion — devout, generous, and praying — who received a vision directing him to send for Peter. When Peter arrived and began to speak, the Holy Spirit fell on Cornelius and his household just as he had fallen on the believers at Pentecost. Peter and the Jewish believers with him were astonished. The proof was undeniable: God had given the same gift to the Gentiles. Peter ordered them to be baptized. The gospel had crossed the deepest social wall of the ancient world.",
       kjvText: "While Peter yet spake these words, the Holy Ghost fell on all them which heard the word. And they of the circumcision which believed were astonished, as many as came with Peter, because that on the Gentiles also was poured out the gift of the Holy Ghost.",
       kjvRef: "Acts 10:44–45",
       scriptureRef: "Acts 10:24–48",
-      approximateDate: "~40 AD"
+      approximateDate: "late 30s to early 40s AD"
     },
     {
       id: 9,
@@ -143,24 +149,25 @@ const LOCATIONS = {
       type: "narrative",
       name: "Antioch",
       modernName: "Antakya, Turkey",
+      journey: "The Church at Antioch",
       lat: 36.2021,
       lng: 36.1604,
       chapters: [
         {
           title: "First Called Christians",
-          summary: "Scattered believers reach Antioch — a great cosmopolitan city of the Roman world — and begin preaching to Greeks as well as Jews. The church that forms here is the first majority-Gentile congregation. Barnabas is sent from Jerusalem to investigate and immediately recognizes God's grace at work. He travels to find Saul in Tarsus and brings him to Antioch, where they teach together for a full year. It is here, in this unlikely city, that disciples are first called 'Christians.'",
+          summary: "Scattered believers reached Antioch — a great cosmopolitan city of the Roman world — and began preaching to Greeks as well as Jews. The church that formed there was a significantly Gentile congregation. Barnabas was sent from Jerusalem to investigate and immediately recognized God's grace at work. He traveled to find Saul in Tarsus and brought him to Antioch, where they taught together for a full year. It was there, in this unlikely city, that disciples were first called 'Christians.'",
           kjvText: "And the disciples were called Christians first in Antioch.",
           kjvRef: "Acts 11:26",
           scriptureRef: "Acts 11:19–26",
-          approximateDate: "~43–44 AD"
+          approximateDate: "~AD 40–45"
         },
         {
           title: "Commissioned and Sent — First Journey Begins",
-          summary: "As the church in Antioch worships and fasts, the Holy Spirit speaks: 'Set apart for me Barnabas and Saul for the work to which I have called them.' After fasting and prayer, the church lays hands on them and sends them out. This is the moment that changes everything — the first deliberate missionary expedition in church history. Paul and Barnabas set out not in their own strength but sent by both the Spirit and the community.",
+          summary: "As the church in Antioch worshipped and fasted, the Holy Spirit spoke: 'Set apart for me Barnabas and Saul for the work to which I have called them.' After fasting and prayer, the church laid hands on them and sent them out. This was the beginning of the first deliberate, church-commissioned missionary journey. Paul and Barnabas set out not in their own strength but sent by both the Spirit and the community.",
           kjvText: "As they ministered to the Lord, and fasted, the Holy Ghost said, Separate me Barnabas and Saul for the work whereunto I have called them. And when they had fasted and prayed, and laid their hands on them, they sent them away.",
           kjvRef: "Acts 13:2–3",
           scriptureRef: "Acts 13:1–3",
-          approximateDate: "~46 AD"
+          approximateDate: "~AD 46–49"
         }
       ]
     },
@@ -171,10 +178,11 @@ const LOCATIONS = {
       type: "narrative",
       name: "Cyprus",
       modernName: "Cyprus (Salamis to Paphos)",
+      journey: "Paul's First Missionary Journey",
       lat: 34.9208,
       lng: 33.6230,
       title: "Sergius Paulus — The Proconsul Believes",
-      summary: "Paul and Barnabas sail to Cyprus — Barnabas's home island — and travel the length of it preaching in synagogues. At Paphos, the Roman proconsul Sergius Paulus sends for them, genuinely wanting to hear the word of God. But a sorcerer named Elymas tries to interfere. Paul, filled with the Spirit, pronounces blindness on him — and when the proconsul sees it happen, he believes. A Roman official of significant power becomes a follower of Christ. It is also here that Saul begins consistently using the name Paul.",
+      summary: "Paul and Barnabas sailed to Cyprus — Barnabas's home island — and traveled the length of it preaching in synagogues. At Paphos, the Roman proconsul Sergius Paulus sent for them, genuinely wanting to hear the word of God. But a sorcerer named Elymas tried to interfere. Paul, filled with the Spirit, pronounced blindness on him — and when the proconsul saw it happen, he believed. A Roman official of significant power became a follower of Christ. It was also here that Saul began consistently using the name Paul.",
       kjvText: "Then the deputy, when he saw what was done, believed, being astonished at the doctrine of the Lord.",
       kjvRef: "Acts 13:12",
       scriptureRef: "Acts 13:4–12",
@@ -187,10 +195,11 @@ const LOCATIONS = {
       type: "narrative",
       name: "Perga",
       modernName: "Murtina / near Antalya, Turkey",
+      journey: "Paul's First Missionary Journey",
       lat: 36.9600,
       lng: 30.8500,
       title: "John Mark Departs",
-      summary: "Paul and Barnabas arrive in Perga in Pamphylia — the southern coast of modern Turkey. Here John Mark, who had come with them as an assistant, leaves and returns to Jerusalem. The text gives no explanation. Later, this moment will cause a painful split between Paul and Barnabas. Paul considered the departure a desertion; Barnabas wanted to give Mark another chance. Whatever the reason, Paul and Barnabas press on northward into the rugged Anatolian highlands.",
+      summary: "Paul and Barnabas arrived in Perga in Pamphylia — the southern coast of modern Turkey. There John Mark, who had come with them as an assistant, left and returned to Jerusalem. The text gives no explanation. Later, this moment would cause a painful split between Paul and Barnabas. Paul considered the departure a desertion; Barnabas wanted to give Mark another chance. Whatever the reason, Paul and Barnabas pressed on northward into the rugged Anatolian highlands.",
       kjvText: "And John departing from them returned to Jerusalem.",
       kjvRef: "Acts 13:13",
       scriptureRef: "Acts 13:13",
@@ -203,14 +212,15 @@ const LOCATIONS = {
       type: "narrative",
       name: "Pisidian Antioch",
       modernName: "Yalvaç, Turkey",
+      journey: "Paul's First Missionary Journey",
       lat: 38.2992,
       lng: 31.1883,
       title: "Synagogue Sermon — To the Jew First",
-      summary: "Paul preaches one of his most complete recorded sermons in the synagogue of Pisidian Antioch — tracing God's faithfulness from Egypt through David to the resurrection of Jesus. The response is remarkable: the next Sabbath, nearly the whole city comes to hear. But the Jewish leaders, filled with jealousy, contradict and blaspheme. Paul turns to them and makes a declaration that will echo through the rest of his ministry: 'Since you thrust the word of God from you, we turn to the Gentiles.'",
+      summary: "Paul preached one of his most complete recorded sermons in the synagogue of Pisidian Antioch — tracing God's faithfulness from Egypt through David to the resurrection of Jesus. The response was remarkable: the next Sabbath, nearly the whole city came to hear. But the Jewish leaders, filled with jealousy, contradicted and blasphemed. Paul turned to them and made a declaration that would echo through the rest of his ministry: 'Since you thrust the word of God from you, we turn to the Gentiles.'",
       kjvText: "Then Paul and Barnabas waxed bold, and said, It was necessary that the word of God should first have been spoken to you: but seeing ye put it from you, and judge yourselves unworthy of everlasting life, lo, we turn to the Gentiles.",
       kjvRef: "Acts 13:46",
       scriptureRef: "Acts 13:14–52",
-      approximateDate: "~46–47 AD"
+      approximateDate: "~AD 46–49"
     },
     {
       id: 14,
@@ -219,14 +229,15 @@ const LOCATIONS = {
       type: "narrative",
       name: "Iconium",
       modernName: "Konya, Turkey",
+      journey: "Paul's First Missionary Journey",
       lat: 37.8715,
       lng: 32.4846,
       title: "Divided City",
-      summary: "In Iconium, Paul and Barnabas speak with such power in the synagogue that a great multitude of both Jews and Greeks believe. But the city becomes divided — some with the Jews, some with the apostles. Plots are formed to stone them. Paul and Barnabas stay long enough to make many disciples, performing signs and wonders, before they learn of a conspiracy against them and move on. Opposition doesn't end the mission; it redirects it.",
+      summary: "In Iconium, Paul and Barnabas spoke with such power in the synagogue that a great multitude of both Jews and Greeks believed. But the city became divided — some with the Jews, some with the apostles. Plots were formed to stone them. Paul and Barnabas stayed long enough to make many disciples, performing signs and wonders, before they learned of a conspiracy against them and moved on. Opposition did not end the mission; it redirected it.",
       kjvText: "Long time therefore abode they speaking boldly in the Lord, which gave testimony unto the word of his grace, and granted signs and wonders to be done by their hands.",
       kjvRef: "Acts 14:3",
       scriptureRef: "Acts 14:1–7",
-      approximateDate: "~47 AD"
+      approximateDate: "~AD 46–49"
     },
     {
       id: 15,
@@ -235,14 +246,15 @@ const LOCATIONS = {
       type: "narrative",
       name: "Lystra",
       modernName: "Near Hatunsaray, Turkey",
+      journey: "Paul's First Missionary Journey",
       lat: 37.5700,
       lng: 32.4000,
       title: "Paul Stoned — Left for Dead",
-      summary: "In Lystra, Paul heals a man lame from birth, and the crowd erupts, calling Barnabas Zeus and Paul Hermes — preparing to offer sacrifices to them. Paul and Barnabas tear their clothes in horror and barely restrain the crowd. Then Jews from Antioch and Iconium arrive, turn the crowd against them, and Paul is stoned and dragged outside the city, left for dead. He gets up. He walks back into the city. The next day he continues to Derbe. This is the man who later writes that he has learned, in whatever state he is, to be content.",
+      summary: "In Lystra, Paul healed a man lame from birth, and the crowd erupted, calling Barnabas Zeus and Paul Hermes — preparing to offer sacrifices to them. Paul and Barnabas tore their clothes in horror and barely restrained the crowd. Then Jews from Antioch and Iconium arrived, turned the crowd against them, and Paul was stoned and dragged outside the city, left for dead. He got up. He walked back into the city. The next day he continued to Derbe. He was the man who later wrote that he had learned, in whatever state he was, to be content.",
       kjvText: "And there came thither certain Jews from Antioch and Iconium, who persuaded the people, and, having stoned Paul, drew him out of the city, supposing he had been dead. Howbeit, as the disciples stood round about him, he rose up, and came into the city.",
       kjvRef: "Acts 14:19–20",
       scriptureRef: "Acts 14:8–20",
-      approximateDate: "~47 AD"
+      approximateDate: "~AD 46–49"
     },
     {
       id: 16,
@@ -251,14 +263,15 @@ const LOCATIONS = {
       type: "narrative",
       name: "Derbe",
       modernName: "Near Kerti Höyük, Turkey",
+      journey: "Paul's First Missionary Journey",
       lat: 37.3500,
       lng: 33.4000,
       title: "Many Disciples",
-      summary: "Derbe is the furthest east Paul reaches on this journey — and the text is quiet about it. No riots, no miracles recorded, no drama. They preach the gospel, make many disciples, and that is enough. Derbe may be the most underappreciated stop of the first journey: a town where people simply believe. From here, rather than continuing east toward home, Paul and Barnabas retrace their steps through hostile territory to strengthen the new churches.",
+      summary: "Derbe was the furthest east Paul reached on this journey — and the text is quiet about it. No riots, no miracles recorded, no drama. They preached the gospel, made many disciples, and that was enough. Derbe may be the most underappreciated stop of the first journey: a town where people simply believed. From there, rather than continuing east toward home, Paul and Barnabas retraced their steps through hostile territory to strengthen the new churches.",
       kjvText: "And when they had preached the gospel to that city, and had taught many, they returned again to Lystra, and to Iconium, and Antioch.",
       kjvRef: "Acts 14:21",
       scriptureRef: "Acts 14:20–21",
-      approximateDate: "~47–48 AD"
+      approximateDate: "~AD 46–49"
     },
     {
       id: 17,
@@ -267,14 +280,15 @@ const LOCATIONS = {
       type: "narrative",
       name: "Antioch",
       modernName: "Antakya, Turkey",
+      journey: "Paul's First Missionary Journey",
       lat: 36.2021,
       lng: 36.1604,
       title: "Return — Report to the Church",
-      summary: "Paul and Barnabas return to Antioch — the church that sent them — and gather the congregation to report what God had done. The first missionary journey is complete. They have planted churches across southern Turkey, been thrown out of cities, stoned, worshipped as gods, and made disciples in every place they visited. Their report carries one particular note of wonder: God had opened a door of faith to the Gentiles. The church in Antioch rejoices.",
+      summary: "Paul and Barnabas returned to Antioch — the church that had sent them — and gathered the congregation to report what God had done. The first missionary journey was complete. They had planted churches across southern Turkey, been thrown out of cities, stoned, worshipped as gods, and made disciples in every place they visited. Their report carried one particular note of wonder: God had opened a door of faith to the Gentiles. The church in Antioch rejoiced.",
       kjvText: "And thence sailed to Antioch, from whence they had been recommended to the grace of God for the work which they fulfilled. And when they were come, and had gathered the church together, they rehearsed all that God had done with them, and how he had opened the door of faith unto the Gentiles.",
       kjvRef: "Acts 14:26–27",
       scriptureRef: "Acts 14:21–28",
-      approximateDate: "~48 AD"
+      approximateDate: "~AD 46–49"
     },
     {
       id: 18,
@@ -283,14 +297,15 @@ const LOCATIONS = {
       type: "narrative",
       name: "Jerusalem",
       modernName: "Jerusalem, Israel",
+      journey: "Jerusalem Council",
       lat: 31.7683,
       lng: 35.2137,
       title: "Jerusalem Council — Gentiles and the Law",
-      summary: "A crisis: some teachers from Judea have been telling Gentile believers they must be circumcised and keep the law of Moses to be saved. Paul and Barnabas go to Jerusalem to settle the question with the apostles and elders. After intense debate, Peter stands — invoking his own experience with Cornelius — and says God made no distinction between Jew and Gentile, purifying both hearts by faith. James the brother of Jesus gives the ruling: do not burden the Gentiles. A letter is sent. The gospel remains free.",
+      summary: "A crisis arose: some teachers from Judea had been telling Gentile believers they must be circumcised and keep the law of Moses to be saved. Paul and Barnabas went to Jerusalem to settle the question with the apostles and elders. After intense debate, Peter stood — invoking his own experience with Cornelius — and declared that God had made no distinction between Jew and Gentile, purifying both hearts by faith. James the brother of Jesus gave the ruling: do not burden the Gentiles. A letter was sent. The gospel remained free.",
       kjvText: "Now therefore why tempt ye God, to put a yoke upon the neck of the disciples, which neither our fathers nor we were able to bear? But we believe that through the grace of the Lord Jesus Christ we shall be saved, even as they.",
       kjvRef: "Acts 15:10–11",
       scriptureRef: "Acts 15:1–29",
-      approximateDate: "~49 AD"
+      approximateDate: "~AD 48–50"
     },
     {
       id: 19,
@@ -299,14 +314,15 @@ const LOCATIONS = {
       type: "narrative",
       name: "Antioch",
       modernName: "Antakya, Turkey",
+      journey: "Paul's Second Missionary Journey",
       lat: 36.2021,
       lng: 36.1604,
       title: "Barnabas and Paul Part Ways",
-      summary: "Paul proposes returning to visit every city where they preached on the first journey. Barnabas wants to take John Mark along again. Paul refuses — Mark had abandoned them in Pamphylia. The disagreement is sharp enough to end their partnership. Barnabas takes Mark to Cyprus; Paul chooses Silas and heads overland. Two mission teams form from what had been one. Later, Paul's letters show that both Mark and Barnabas were eventually restored in his estimation — but for now, they go separate ways.",
+      summary: "Paul proposed returning to visit every city where they had preached on the first journey. Barnabas wanted to take John Mark along again. Paul refused — Mark had abandoned them in Pamphylia. The disagreement was sharp enough to end their partnership. Barnabas took Mark to Cyprus; Paul chose Silas and headed overland. Two mission teams formed from what had been one. Paul's later letters show that both Mark and Barnabas were eventually restored in his estimation — but for now, they went separate ways.",
       kjvText: "And the contention was so sharp between them, that they departed asunder one from the other: and so Barnabas took Mark, and sailed unto Cyprus; And Paul chose Silas, and departed, being recommended by the brethren unto the grace of God.",
       kjvRef: "Acts 15:39–40",
       scriptureRef: "Acts 15:36–41",
-      approximateDate: "~49 AD"
+      approximateDate: "~AD 48–50"
     },
     {
       id: 20,
@@ -315,14 +331,15 @@ const LOCATIONS = {
       type: "narrative",
       name: "Lystra",
       modernName: "Near Hatunsaray, Turkey",
+      journey: "Paul's Second Missionary Journey",
       lat: 37.5700,
       lng: 32.4000,
       title: "Timothy Joins",
-      summary: "Paul returns to Lystra — where he was stoned on the first journey — and finds a young disciple named Timothy, well-spoken of by believers in Lystra and Iconium, the son of a Jewish mother and Greek father. Paul wants to take him along. He has Timothy circumcised — not as a requirement for salvation, but to prevent the mission to Jews from being blocked on cultural grounds. Timothy will become Paul's most trusted companion, partner, and 'true son in the faith.'",
+      summary: "Paul returned to Lystra — where he had been stoned on the first journey — and found a young disciple named Timothy, well-spoken of by believers in Lystra and Iconium, the son of a Jewish mother and Greek father. Paul wanted to take him along. He had Timothy circumcised — not as a requirement for salvation, but to prevent the mission to Jews from being blocked on cultural grounds. Timothy would become Paul's most trusted companion, partner, and 'true son in the faith.'",
       kjvText: "Him would Paul have to go forth with him; and took and circumcised him because of the Jews which were in those quarters: for they knew all that his father was a Greek.",
       kjvRef: "Acts 16:3",
       scriptureRef: "Acts 16:1–5",
-      approximateDate: "~49–50 AD"
+      approximateDate: "~AD 49–53"
     },
     {
       id: 21,
@@ -331,14 +348,15 @@ const LOCATIONS = {
       type: "narrative",
       name: "Troas",
       modernName: "Near Dalyan / Alexandria Troas, Turkey",
+      journey: "Paul's Second Missionary Journey",
       lat: 39.7500,
       lng: 26.1667,
       title: "The Macedonian Vision",
-      summary: "Paul, Silas, and Timothy have been blocked from going into Asia and Bithynia — the Spirit will not allow it, though the text gives no explanation. They find themselves at Troas on the Aegean coast, with nowhere obvious to go. That night, Paul sees a vision: a man of Macedonia standing and pleading — 'Come over and help us.' They conclude immediately that God is calling them westward. They sail at dawn. The gospel is about to enter Europe for the first time.",
+      summary: "Paul, Silas, and Timothy had been blocked from going into Asia and Bithynia — the Spirit would not allow it, though the text gives no explanation. They found themselves at Troas on the Aegean coast, with nowhere obvious to go. That night, Paul saw a vision: a man of Macedonia standing and pleading — 'Come over and help us.' They concluded immediately that God was calling them westward. They sailed at dawn. The gospel was about to enter Europe for the first time.",
       kjvText: "And a vision appeared to Paul in the night; There stood a man of Macedonia, and prayed him, saying, Come over into Macedonia, and help us. And after he had seen the vision, immediately we endeavoured to go into Macedonia, assuredly gathering that the Lord had called us for to preach the gospel unto them.",
       kjvRef: "Acts 16:9–10",
       scriptureRef: "Acts 16:6–10",
-      approximateDate: "~50 AD"
+      approximateDate: "~AD 49–53"
     },
     {
       id: 22,
@@ -347,14 +365,15 @@ const LOCATIONS = {
       type: "narrative",
       name: "Philippi",
       modernName: "Near Kavala, Greece",
+      journey: "Paul's Second Missionary Journey",
       lat: 41.0137,
       lng: 24.2875,
       title: "Lydia, Prison, Earthquake",
-      summary: "Philippi is a Roman colony — proud, military, Latin-speaking. Paul finds no synagogue, only a prayer gathering by the river where he meets Lydia, a dealer in purple cloth from Thyatira. She and her household become the first converts in Europe. Later, a slave girl with a spirit of divination follows them for days until Paul casts out the spirit — which destroys her owners' income. Paul and Silas are beaten and thrown into prison. At midnight they are singing hymns. An earthquake opens every door and looses every chain. The jailer, trembling, asks: 'What must I do to be saved?'",
+      summary: "Philippi was a Roman colony — proud, military, Latin-speaking. Paul found no synagogue, only a prayer gathering by the river where he met Lydia, a dealer in purple cloth from Thyatira. She and her household became the first recorded converts in the region. Later, a slave girl with a spirit of divination followed them for days until Paul cast out the spirit — which destroyed her owners' income. Paul and Silas were beaten and thrown into prison. At midnight they were singing hymns. An earthquake opened every door and loosed every chain. The jailer, trembling, asked: 'What must I do to be saved?'",
       kjvText: "And at midnight Paul and Silas prayed, and sang praises unto God: and the prisoners heard them. And suddenly there was a great earthquake, so that the foundations of the prison were shaken: and immediately all the doors were opened, and every one's bands were loosed.",
       kjvRef: "Acts 16:25–26",
       scriptureRef: "Acts 16:11–40",
-      approximateDate: "~50 AD"
+      approximateDate: "~AD 49–53"
     },
     {
       id: 23,
@@ -363,14 +382,15 @@ const LOCATIONS = {
       type: "narrative",
       name: "Thessalonica",
       modernName: "Thessaloniki, Greece",
+      journey: "Paul's Second Missionary Journey",
       lat: 40.6401,
       lng: 22.9444,
       title: "These Who Have Turned the World Upside Down",
-      summary: "Paul reasons in the synagogue for three Sabbaths, explaining that the Messiah had to suffer and rise from the dead. Some Jews believe; a great multitude of devout Greeks and a number of leading women believe. But jealous Jews gather a mob, dragging the homeowner Jason before city officials and accusing: 'These who have turned the world upside down have come here also.' The charge is meant as an accusation. History reads it as an epitaph.",
+      summary: "Paul reasoned in the synagogue for three Sabbaths, explaining that the Messiah had to suffer and rise from the dead. Some Jews believed; a great multitude of devout Greeks and a number of leading women believed. But jealous Jews gathered a mob, dragging the homeowner Jason before city officials and accusing: 'These who have turned the world upside down have come here also.' The charge was meant as an accusation. History reads it as an epitaph.",
       kjvText: "And Jason hath received them: and these all do contrary to the decrees of Caesar, saying that there is another king, one Jesus.",
       kjvRef: "Acts 17:7",
       scriptureRef: "Acts 17:1–9",
-      approximateDate: "~50 AD"
+      approximateDate: "~AD 49–53"
     },
     {
       id: 24,
@@ -379,14 +399,15 @@ const LOCATIONS = {
       type: "narrative",
       name: "Berea",
       modernName: "Veria, Greece",
+      journey: "Paul's Second Missionary Journey",
       lat: 40.5236,
       lng: 22.2044,
       title: "The Noble Bereans",
-      summary: "Paul arrives in Berea and finds something rare — Jews who receive the word with readiness and search the Scriptures daily to verify whether the things Paul is saying are true. Many believe, including Greek women of high standing. The Bereans are remembered not for dramatic miracles or great suffering but for diligence: they checked. When Paul's enemies from Thessalonica arrive to stir up trouble, believers escort Paul out of town. Silas and Timothy stay behind to strengthen the new church.",
+      summary: "Paul arrived in Berea and found something rare — Jews who received the word with readiness and searched the Scriptures daily to verify whether the things Paul was saying were true. Many believed, including Greek women of high standing. The Bereans are remembered not for dramatic miracles or great suffering but for diligence: they checked. When Paul's enemies from Thessalonica arrived to stir up trouble, believers escorted Paul out of town. Silas and Timothy stayed behind to strengthen the new church.",
       kjvText: "These were more noble than those in Thessalonica, in that they received the word with all readiness of mind, and searched the scriptures daily, whether those things were so.",
       kjvRef: "Acts 17:11",
       scriptureRef: "Acts 17:10–15",
-      approximateDate: "~50 AD"
+      approximateDate: "~AD 49–53"
     },
     {
       id: 25,
@@ -395,14 +416,15 @@ const LOCATIONS = {
       type: "narrative",
       name: "Athens",
       modernName: "Athens, Greece",
+      journey: "Paul's Second Missionary Journey",
       lat: 37.9838,
       lng: 23.7275,
       title: "Mars Hill — The Unknown God",
-      summary: "Paul waits in Athens and his spirit is provoked by the city full of idols. He reasons daily in the synagogue and in the marketplace. Epicurean and Stoic philosophers take him to the Areopagus — Mars Hill — to hear this strange new teaching. He begins not with Scripture but with what they already know: the altar inscribed 'TO AN UNKNOWN GOD.' He declares: the God who made the world does not live in temples made with hands. He has fixed a day on which he will judge the world by the man he has raised from the dead. Some sneer. Some say they will hear him again. A few believe.",
+      summary: "Paul waited in Athens and his spirit was provoked by the city full of idols. He reasoned daily in the synagogue and in the marketplace. Epicurean and Stoic philosophers took him to the Areopagus — Mars Hill — to hear this strange new teaching. He began not with Scripture but with what they already knew: the altar inscribed 'TO AN UNKNOWN GOD.' He declared: the God who made the world does not live in temples made with hands. God had fixed a day on which he would judge the world by the man he had raised from the dead. Some sneered. Some said they would hear him again. A few believed.",
       kjvText: "For as I passed by, and beheld your devotions, I found an altar with this inscription, TO THE UNKNOWN GOD. Whom therefore ye ignorantly worship, him declare I unto you.",
       kjvRef: "Acts 17:23",
       scriptureRef: "Acts 17:16–34",
-      approximateDate: "~50–51 AD"
+      approximateDate: "~AD 49–53"
     },
     {
       id: 26,
@@ -411,14 +433,15 @@ const LOCATIONS = {
       type: "narrative",
       name: "Corinth",
       modernName: "Corinth, Greece",
+      journey: "Paul's Second Missionary Journey",
       lat: 37.9387,
       lng: 22.9283,
       title: "Eighteen Months in Corinth",
-      summary: "Corinth is wealthy, cosmopolitan, and notorious for immorality — a crossroads port city with temples and vice in abundance. Paul arrives alone, anxious, and by his own account 'in weakness and in fear.' He finds Aquila and Priscilla — tentmakers expelled from Rome — and works alongside them by trade while preaching every Sabbath. When opposition intensifies, God speaks to Paul in a vision: 'Do not be silent, for I am with you.' He stays eighteen months. The church he plants here is large, gifted, troubled — and beloved. He writes them two letters.",
+      summary: "Corinth was wealthy, cosmopolitan, and notorious for immorality — a crossroads port city with temples and vice in abundance. Paul arrived and by his own account came 'in weakness and in fear.' He found Aquila and Priscilla — tentmakers expelled from Rome — and worked alongside them by trade while preaching every Sabbath. When opposition intensified, God spoke to Paul in a vision: 'Do not be silent, for I am with you.' He stayed eighteen months. The church he planted there was large, gifted, and troubled. He later wrote them two letters.",
       kjvText: "And the Lord said to Paul in the night by a vision, Be not afraid, but speak, and hold not thy peace: For I am with thee, and no man shall set on thee to hurt thee: for I have much people in this city.",
       kjvRef: "Acts 18:9–10",
       scriptureRef: "Acts 18:1–18",
-      approximateDate: "~50–52 AD"
+      approximateDate: "~AD 50–52 (Gallio inscription)"
     },
     {
       id: 27,
@@ -427,14 +450,15 @@ const LOCATIONS = {
       type: "narrative",
       name: "Ephesus",
       modernName: "Selçuk (near Ephesus), Turkey",
+      journey: "Paul's Second Missionary Journey",
       lat: 37.9395,
       lng: 27.3417,
       title: "Brief Visit — Promise to Return",
-      summary: "Sailing east, Paul stops briefly in Ephesus and reasons with the Jews in the synagogue. They ask him to stay longer; he declines, promising to return if God wills. He leaves Aquila and Priscilla there. This brief visit plants a seed — Apollos arrives later and is discipled here by Priscilla and Aquila. When Paul returns on his third journey, Ephesus becomes the center of the most extended ministry of his career.",
+      summary: "Sailing east, Paul stopped briefly in Ephesus and reasoned with the Jews in the synagogue. They asked him to stay longer; he declined, promising to return if God willed. He left Aquila and Priscilla there. This brief visit planted a seed — Apollos arrived later and was instructed there by Priscilla and Aquila. When Paul returned on his third journey, Ephesus became the center of the most extended ministry of his career.",
       kjvText: "But he left them, and sailed from Ephesus: but bade them farewell, saying, I must by all means keep this feast that cometh in Jerusalem: but I will return again unto you, if God will.",
       kjvRef: "Acts 18:21",
       scriptureRef: "Acts 18:19–21",
-      approximateDate: "~52 AD"
+      approximateDate: "~AD 52–53"
     },
     {
       id: 28,
@@ -443,14 +467,15 @@ const LOCATIONS = {
       type: "narrative",
       name: "Jerusalem",
       modernName: "Jerusalem, Israel",
+      journey: "Paul's Second Missionary Journey",
       lat: 31.7683,
       lng: 35.2137,
       title: "Return Visit to Jerusalem",
-      summary: "Paul returns to Jerusalem briefly — likely for the feast of Pentecost — before returning to Antioch. Luke's account of this visit is almost parenthetical: 'he went up and greeted the church, and then went down to Antioch.' The rhythm of the second journey is complete: launched from Antioch, through Turkey, into Europe for the first time, then back. The churches in Macedonia and Achaia are planted. Paul will not return to Jerusalem again until the end of his third journey — when he will not leave as a free man.",
+      summary: "Paul returned to Jerusalem briefly — likely for the feast of Pentecost — before returning to Antioch. Luke's account of this visit is almost parenthetical: 'he went up and greeted the church, and then went down to Antioch.' The second journey was complete: launched from Antioch, through Turkey, into Europe for the first time, then back. The churches in Macedonia and Achaia had been planted. Paul would not return to Jerusalem again until the end of his third journey — when he would not leave as a free man.",
       kjvText: "And he said farewell to them, saying, I must by all means keep this feast that cometh in Jerusalem: but I will return again unto you, if God will.",
       kjvRef: "Acts 18:21",
       scriptureRef: "Acts 18:22",
-      approximateDate: "~52 AD"
+      approximateDate: "~AD 52–53"
     },
     {
       id: 29,
@@ -459,14 +484,15 @@ const LOCATIONS = {
       type: "narrative",
       name: "Ephesus",
       modernName: "Selçuk (near Ephesus), Turkey",
+      journey: "Paul's Third Missionary Journey",
       lat: 37.9395,
       lng: 27.3417,
       title: "Three Years in Ephesus — School of Tyrannus",
-      summary: "Paul returns to Ephesus and stays for nearly three years — the longest recorded stay in any city. He begins in the synagogue, then moves his teaching to the lecture hall of Tyrannus, teaching daily for two years. All who live in the province of Asia hear the word. Handkerchiefs and aprons from Paul's hands bring healing. Exorcists attempt to use Jesus's name without faith — and are beaten by the demonized man, fleeing naked. Sorcerers burn their books publicly. Finally, the silversmiths who make shrines of Artemis riot because the gospel is destroying their trade.",
+      summary: "Paul returned to Ephesus and stayed for nearly three years — the longest recorded stay in any city. He began in the synagogue, then moved his teaching to the lecture hall of Tyrannus, teaching daily for two years. All who lived in the province of Asia heard the word. Handkerchiefs and aprons from Paul's hands brought healing. Exorcists attempted to use Jesus's name without faith — and were beaten by the demonized man, fleeing naked. Sorcerers burned their books publicly. Finally, the silversmiths who made shrines of Artemis rioted because the gospel was destroying their trade.",
       kjvText: "And this continued by the space of two years; so that all they which dwelt in Asia heard the word of the Lord Jesus, both Jews and Greeks.",
       kjvRef: "Acts 19:10",
       scriptureRef: "Acts 19:1–41",
-      approximateDate: "~53–56 AD"
+      approximateDate: "~AD 52–57"
     },
     {
       id: 30,
@@ -475,14 +501,15 @@ const LOCATIONS = {
       type: "narrative",
       name: "Macedonia and Greece",
       modernName: "Greece / North Macedonia region",
+      journey: "Paul's Third Missionary Journey",
       lat: 40.9000,
       lng: 23.0000,
       title: "Strengthening the Churches",
-      summary: "Paul travels through Macedonia — revisiting Philippi, Thessalonica, Berea — encouraging and strengthening the churches he had planted on the second journey. He spends three months in Greece, likely in Corinth. A plot against him by Jews causes him to change his plans and travel overland back north rather than sail directly. He gathers around him a team of representatives from the churches who will accompany him to Jerusalem: Sopater, Aristarchus, Secundus, Gaius, Timothy, Tychicus, and Trophimus.",
+      summary: "Paul traveled through Macedonia — revisiting Philippi, Thessalonica, Berea — encouraging and strengthening the churches he had planted on the second journey. He spent three months in Greece, likely in Corinth. A plot against him by Jews caused him to change his plans and travel overland back north rather than sail directly. He gathered around him a team of representatives from the churches who would accompany him to Jerusalem: Sopater, Aristarchus, Secundus, Gaius, Timothy, Tychicus, and Trophimus.",
       kjvText: "And he went over those parts, and had given them much exhortation, he came into Greece, And there abode three months.",
       kjvRef: "Acts 20:2–3",
       scriptureRef: "Acts 20:1–6",
-      approximateDate: "~56–57 AD"
+      approximateDate: "~AD 53–57"
     },
     {
       id: 31,
@@ -491,14 +518,15 @@ const LOCATIONS = {
       type: "narrative",
       name: "Troas",
       modernName: "Near Dalyan / Alexandria Troas, Turkey",
+      journey: "Paul's Third Missionary Journey",
       lat: 39.7500,
       lng: 26.1667,
       title: "Eutychus Raised to Life",
-      summary: "In Troas, Paul meets with believers on the first day of the week to break bread. He preaches until midnight — he is leaving the next day — and a young man named Eutychus, sitting in the window on the third floor, sinks into deep sleep and falls to his death. Paul goes down, embraces him, and announces that his life is still in him. They go back upstairs, eat, and Paul continues talking until dawn. The group is not consoled. They are 'greatly comforted.'",
+      summary: "In Troas, Paul met with believers on the first day of the week to break bread. He preached until midnight — he was leaving the next day — and a young man named Eutychus, sitting in the window on the third floor, sank into deep sleep and fell to his death. Paul went down, embraced him, and announced that his life was still in him. They went back upstairs, broke bread, and Paul continued talking until dawn. Luke records that they brought the young man home alive, and the community was 'not a little comforted' — meaning grief gave way to overwhelming joy.",
       kjvText: "And there were many lights in the upper chamber, where they were gathered together. And there sat in a window a certain young man named Eutychus, being fallen into a deep sleep: and as Paul was long preaching, he sunk down with sleep, and fell down from the third loft, and was taken up dead.",
       kjvRef: "Acts 20:8–9",
       scriptureRef: "Acts 20:7–12",
-      approximateDate: "~57 AD"
+      approximateDate: "~AD 57"
     },
     {
       id: 32,
@@ -507,14 +535,15 @@ const LOCATIONS = {
       type: "narrative",
       name: "Miletus",
       modernName: "Near Akköy, Turkey",
+      journey: "Paul's Third Missionary Journey",
       lat: 37.5285,
       lng: 27.2764,
       title: "Farewell to the Ephesian Elders",
-      summary: "Paul sends to Ephesus for the elders of the church — he will not go there himself, pressing to reach Jerusalem by Pentecost. When they arrive, he gives what is in effect his last pastoral address to the church he loves most. He recounts his ministry among them: how he served with tears, taught them publicly and house to house, warned them night and day. He tells them he is bound to Jerusalem, not knowing what will befall him — only that the Spirit bears witness that chains and afflictions await. He will never see them again. They all kneel on the beach and weep.",
+      summary: "Paul sent to Ephesus for the elders of the church — he would not go there himself, pressing to reach Jerusalem by Pentecost. When they arrived, he gave what was in effect his last pastoral address to the church he loved most. He recounted his ministry among them: how he had served with tears, taught them publicly and house to house, warned them night and day. He told them he was bound to Jerusalem, not knowing what would befall him — only that the Spirit bore witness that chains and afflictions awaited. He would never see them again. They all knelt on the beach and wept.",
       kjvText: "And now, behold, I know that ye all, among whom I have gone preaching the kingdom of God, shall see my face no more. Wherefore I take you to record this day, that I am pure from the blood of all men.",
       kjvRef: "Acts 20:25–26",
       scriptureRef: "Acts 20:13–38",
-      approximateDate: "~57 AD"
+      approximateDate: "~AD 57"
     },
     {
       id: 33,
@@ -523,14 +552,15 @@ const LOCATIONS = {
       type: "narrative",
       name: "Caesarea",
       modernName: "Caesarea, Israel",
+      journey: "Paul's Third Missionary Journey",
       lat: 32.5026,
       lng: 34.8940,
       title: "Agabus Prophecy — 'So Shall the Jews Bind This Man'",
-      summary: "Paul arrives at Caesarea and stays with Philip the evangelist — one of the original seven deacons, whose daughters prophesy. A prophet named Agabus comes down from Judea, takes Paul's belt, binds his own hands and feet, and declares: 'Thus saith the Holy Ghost, So shall the Jews at Jerusalem bind the man that owneth this girdle.' The people beg Paul not to go. He answers: I am ready not only to be bound, but to die at Jerusalem for the name of the Lord Jesus. And when they cannot persuade him, they cease — saying: the will of the Lord be done.",
+      summary: "Paul arrived at Caesarea and stayed with Philip the evangelist — one of the Seven, whose daughters prophesied. A prophet named Agabus came down from Judea, took Paul's belt, bound his own hands and feet, and declared: 'Thus saith the Holy Ghost, So shall the Jews at Jerusalem bind the man that owneth this girdle.' The people begged Paul not to go. He answered: I am ready not only to be bound, but to die at Jerusalem for the name of the Lord Jesus. And when they could not persuade him, they ceased — saying: the will of the Lord be done.",
       kjvText: "And when he would not be persuaded, we ceased, saying, The will of the Lord be done.",
       kjvRef: "Acts 21:14",
       scriptureRef: "Acts 21:8–14",
-      approximateDate: "~57 AD"
+      approximateDate: "~AD 57"
     },
     {
       id: 34,
@@ -539,24 +569,25 @@ const LOCATIONS = {
       type: "narrative",
       name: "Jerusalem",
       modernName: "Jerusalem, Israel",
+      journey: "Paul's Arrest & Trials",
       lat: 31.7683,
       lng: 35.2137,
       chapters: [
         {
           title: "Arrest in the Temple",
-          summary: "Paul's arrival in Jerusalem seems promising — he meets with James, reports what God has done among the Gentiles, and is received gladly. But Jews from Asia recognize him in the temple and seize him, shouting that he has defiled the holy place by bringing a Gentile in. The whole city is stirred up. They are beating Paul to death when Roman soldiers rush in and arrest him. As he is carried up the steps of the barracks, he asks permission to speak to the crowd. Standing there, chained, he begins his defense — in Hebrew.",
+          summary: "Paul's arrival in Jerusalem seemed promising — he met with James, reported what God had done among the Gentiles, and was received gladly. But Jews from Asia recognized him in the temple and seized him, shouting that he had defiled the holy place by bringing a Gentile in. The whole city was stirred up. They were beating Paul to death when Roman soldiers rushed in and arrested him. As he was carried up the steps of the barracks, he asked permission to speak to the crowd. Standing there, chained, he began his defense — in Hebrew.",
           kjvText: "And as they went about to kill him, tidings came unto the chief captain of the band, that all Jerusalem was in an uproar. Who immediately took soldiers and centurions, and ran down unto them: and when they saw the chief captain and the soldiers, they left beating of Paul.",
           kjvRef: "Acts 21:31–32",
           scriptureRef: "Acts 21:15–36",
-          approximateDate: "~57 AD"
+          approximateDate: "~AD 57"
         },
         {
           title: "Trials Before the Sanhedrin",
-          summary: "Paul is brought before the Jewish council. He immediately identifies himself as a Pharisee and declares the controversy is over the resurrection of the dead — splitting the council between Pharisees and Sadducees so completely that the Roman commander must rescue him by force. That night the Lord stands beside Paul: 'Be of good cheer, Paul: for as thou hast testified of me in Jerusalem, so must thou bear witness also at Rome.' A plot of forty men swear an oath not to eat or drink until Paul is dead. He is transferred under heavy guard to Caesarea.",
+          summary: "Paul was brought before the Jewish council. He immediately identified himself as a Pharisee and declared the controversy was over the resurrection of the dead — splitting the council between Pharisees and Sadducees so completely that the Roman commander had to rescue him by force. That night the Lord stood beside Paul: 'Be of good cheer, Paul: for as thou hast testified of me in Jerusalem, so must thou bear witness also at Rome.' A plot of forty men swore an oath not to eat or drink until Paul was dead. He was transferred under heavy guard to Caesarea.",
           kjvText: "And the night following the Lord stood by him, and said, Be of good cheer, Paul: for as thou hast testified of me in Jerusalem, so must thou bear witness also at Rome.",
           kjvRef: "Acts 23:11",
           scriptureRef: "Acts 22–23",
-          approximateDate: "~57 AD"
+          approximateDate: "~AD 57"
         }
       ]
     },
@@ -567,14 +598,15 @@ const LOCATIONS = {
       type: "narrative",
       name: "Caesarea",
       modernName: "Caesarea, Israel",
+      journey: "Paul's Arrest & Trials",
       lat: 32.5026,
       lng: 34.8940,
       title: "Trials Before Felix, Festus, and Agrippa",
-      summary: "Paul spends two years imprisoned in Caesarea under Felix, who hopes for a bribe. When Festus succeeds Felix, Paul exercises his right as a Roman citizen: 'I appeal to Caesar.' Agrippa the king comes to hear him, and Paul delivers his defense with such force that Agrippa says: 'Almost thou persuadest me to be a Christian.' Paul replies that he wishes Agrippa, and all who hear him, were as he is — except for the chains. Festus and Agrippa agree: this man has done nothing worthy of death or imprisonment. But he has appealed to Caesar, and to Caesar he must go.",
+      summary: "Paul spent two years imprisoned in Caesarea under Felix, who hoped for a bribe. When Festus succeeded Felix, Paul exercised his right as a Roman citizen: 'I appeal to Caesar.' Agrippa the king came to hear him, and Paul delivered his defense with such force that Agrippa said: 'Almost thou persuadest me to be a Christian.' Paul replied that he wished Agrippa, and all who heard him, were as he was — except for the chains. Festus and Agrippa agreed: this man had done nothing worthy of death or imprisonment. But he had appealed to Caesar, and to Caesar he had to go.",
       kjvText: "Then Agrippa said unto Paul, Almost thou persuadest me to be a Christian. And Paul said, I would to God, that not only thou, but also all that hear me this day, were both almost, and altogether such as I am, except these bonds.",
       kjvRef: "Acts 26:28–29",
       scriptureRef: "Acts 24–26",
-      approximateDate: "~57–59 AD"
+      approximateDate: "~AD 57–60 (Festus governorship)"
     },
     {
       id: 37,
@@ -583,14 +615,15 @@ const LOCATIONS = {
       type: "narrative",
       name: "Fair Havens, Crete",
       modernName: "Limenas Kalón Limenón, Crete, Greece",
+      journey: "Journey to Rome",
       lat: 34.9200,
       lng: 24.9000,
       title: "Warning Ignored — Storm Ahead",
-      summary: "Paul sails for Rome as a prisoner. At Fair Havens on the southern coast of Crete, he urges the centurion: the sailing is dangerous, this voyage will end in disaster and great loss. He is not a sailor. He is not heeded. They sail on. A fierce nor'easter catches them and for days they cannot see sun or stars — all hope of being saved is abandoned. Then Paul stands among them and says: take courage. An angel has told him no life will be lost. Only the ship. He has appealed to Caesar; before Caesar they will stand.",
+      summary: "Paul sailed for Rome as a prisoner. At Fair Havens on the southern coast of Crete, he urged the centurion: the sailing was dangerous, this voyage would end in disaster and great loss. He was not a sailor. He was not heeded. They sailed on. A fierce nor'easter caught them and for days they could not see sun or stars — all hope of being saved was abandoned. Then Paul stood among them and said: take courage. An angel had told him no life would be lost. Only the ship. He had appealed to Caesar; before Caesar they would stand.",
       kjvText: "But after long abstinence Paul stood forth in the midst of them, and said, Sirs, ye should have hearkened unto me, and not have loosed from Crete, and to have gained this harm and loss.",
       kjvRef: "Acts 27:21",
       scriptureRef: "Acts 27:8–26",
-      approximateDate: "~59 AD"
+      approximateDate: "~AD 59–60"
     },
     {
       id: 38,
@@ -599,14 +632,15 @@ const LOCATIONS = {
       type: "narrative",
       name: "Malta",
       modernName: "Malta",
+      journey: "Journey to Rome",
       lat: 35.9375,
       lng: 14.3754,
       title: "Shipwreck, Viper, Healings",
-      summary: "After fourteen days adrift, the ship runs aground and breaks apart on the coast of Malta. All 276 people on board reach shore safely — as Paul had declared. The local people show them unusual kindness, building a fire in the rain and cold. A viper fastens on Paul's hand from the heat of the fire; the islanders watch for him to swell and die. He shakes it into the fire and feels nothing. The governor's father is healed of fever and dysentery. The sick of the whole island come to Paul and are healed. They winter in Malta for three months.",
+      summary: "After fourteen days adrift, the ship ran aground and broke apart on the coast of Malta. All 276 people on board reached shore safely — as Paul had declared. The local people showed them unusual kindness, building a fire in the rain and cold. A viper fastened on Paul's hand from the heat of the fire; the islanders watched for him to swell and die. He shook it into the fire and felt nothing. The father of the island's leading official was healed of fever and dysentery. The sick of the whole island came to Paul and were healed. They wintered in Malta for three months.",
       kjvText: "And when Paul had gathered a bundle of sticks, and laid them on the fire, there came a viper out of the heat, and fastened on his hand. And he shook off the beast into the fire, and felt no harm.",
       kjvRef: "Acts 28:3, 5",
       scriptureRef: "Acts 28:1–10",
-      approximateDate: "~59–60 AD"
+      approximateDate: "~AD 59–60"
     },
     {
       id: 39,
@@ -615,14 +649,15 @@ const LOCATIONS = {
       type: "narrative",
       name: "Rome",
       modernName: "Rome, Italy",
+      journey: "Journey to Rome",
       lat: 41.9028,
       lng: 12.4964,
       title: "Rome — Preaching Freely",
-      summary: "Paul enters Rome. He has wanted to come here for years — has written the church here an entire letter full of theology. He arrives in chains, but the Lord had told him he would come. He is allowed to live by himself with the soldier who guards him. He calls the local Jewish leaders, explains his situation, and spends a whole day laying out the kingdom of God from Moses and the prophets. Some believe; some disbelieve. He stays two full years, welcoming all who come, preaching the kingdom and teaching about the Lord Jesus Christ — openly and unhindered. That is where Luke's account ends. Not with a verdict. With the word unhindered.",
+      summary: "Paul entered Rome. He had wanted to come there for years — had written the church there an entire letter full of theology. He arrived in chains, but the Lord had told him he would come. He was allowed to live by himself with the soldier who guarded him. He called the local Jewish leaders, explained his situation, and spent a whole day laying out the kingdom of God from Moses and the prophets. Some believed; some disbelieved. He stayed two full years, welcoming all who came, preaching the kingdom and teaching about the Lord Jesus Christ — openly and unhindered. That is where Luke's account ends. Not with a verdict. With the word unhindered.",
       kjvText: "And Paul dwelt two whole years in his own hired house, and received all that came in unto him, Preaching the kingdom of God, and teaching those things which concern the Lord Jesus Christ, with all confidence, no man forbidding him.",
       kjvRef: "Acts 28:30–31",
       scriptureRef: "Acts 28:11–31",
-      approximateDate: "~60–62 AD"
+      approximateDate: "~AD 60–62"
     }
   ],
 
@@ -837,7 +872,7 @@ const LOCATIONS = {
       writtenToLabel: "Written to Rome",
       writtenToLat: 41.9028,
       writtenToLng: 12.4964,
-      approximateDate: "~57 AD",
+      approximateDate: "~AD 57",
       summary: "Paul writes his most systematic exposition of the gospel — justification by faith, the problem of sin, the hope of resurrection, the mystery of Israel, and the ethics of Christian community — to a church he has never visited, preparing to come in person after delivering relief funds to Jerusalem.",
       keyVerse: "For I am not ashamed of the gospel of Christ: for it is the power of God unto salvation to every one that believeth; to the Jew first, and also to the Greek.",
       keyRef: "Romans 1:16"
@@ -857,7 +892,7 @@ const LOCATIONS = {
       writtenToLabel: "Written to Rome",
       writtenFromLat: 37.9387,
       writtenFromLng: 22.9283,
-      approximateDate: "~57 AD",
+      approximateDate: "~AD 57",
       summary: "The church at Rome received Paul's most complete theological letter before ever meeting him in person. A mixed community of Jewish and Gentile believers, they had navigated tension and expulsion under Claudius. Paul addresses them as equals — in sin, in grace, in hope.",
       keyVerse: "There is therefore now no condemnation to them which are in Christ Jesus, who walk not after the flesh, but after the Spirit.",
       keyRef: "Romans 8:1"
@@ -937,7 +972,7 @@ const LOCATIONS = {
       writtenToLabel: "Written to Ephesus",
       writtenToLat: 37.9395,
       writtenToLng: 27.3417,
-      approximateDate: "~60–62 AD",
+      approximateDate: "~AD 60–62",
       summary: "Written during Paul's Roman imprisonment, Ephesians soars with theology — the mystery of the church as Christ's body, Jews and Gentiles united in one new man, the armor of God for spiritual warfare. Paul prays for the readers to know the breadth, length, depth, and height of the love of Christ that surpasses knowledge.",
       keyVerse: "For by grace are ye saved through faith; and that not of yourselves: it is the gift of God: Not of works, lest any man should boast.",
       keyRef: "Ephesians 2:8–9"
@@ -957,7 +992,7 @@ const LOCATIONS = {
       writtenToLabel: "Written to Philippi",
       writtenToLat: 41.0137,
       writtenToLng: 24.2875,
-      approximateDate: "~60–62 AD",
+      approximateDate: "~AD 60–62",
       summary: "Paul's most joyful letter, written while imprisoned, to the church that had supported him most faithfully — the first church planted in Europe. He tells them to rejoice always, to think on whatever is true and good and lovely, and that he has learned contentment in all circumstances. 'I can do all things through Christ which strengtheneth me.'",
       keyVerse: "I can do all things through Christ which strengtheneth me.",
       keyRef: "Philippians 4:13"
@@ -977,7 +1012,7 @@ const LOCATIONS = {
       writtenToLabel: "Written to Colossae",
       writtenToLat: 37.7700,
       writtenToLng: 29.1200,
-      approximateDate: "~60–62 AD",
+      approximateDate: "~AD 60–62",
       summary: "Written to a church Paul may never have visited personally, to combat a philosophy mixing Jewish law-observance, angel worship, and asceticism with the gospel. Paul's answer is the supremacy of Christ — in whom all the fullness of the Godhead dwells bodily, in whom all treasure of wisdom and knowledge is hidden.",
       keyVerse: "For in him dwelleth all the fulness of the Godhead bodily. And ye are complete in him.",
       keyRef: "Colossians 2:9–10"
@@ -997,7 +1032,7 @@ const LOCATIONS = {
       writtenToLabel: "Written to Thessalonica",
       writtenToLat: 40.6401,
       writtenToLng: 22.9444,
-      approximateDate: "~50–51 AD",
+      approximateDate: "~AD 49–53",
       summary: "Likely Paul's earliest surviving letter, written shortly after being forced to leave Thessalonica and anxious about how the young church was faring under persecution. Timothy returns with good news: they are standing firm. Paul writes to encourage them, to address questions about believers who have died before Christ returns, and to call them to holiness.",
       keyVerse: "For the Lord himself shall descend from heaven with a shout, with the voice of the archangel, and with the trump of God: and the dead in Christ shall rise first.",
       keyRef: "1 Thessalonians 4:16"
@@ -1017,7 +1052,7 @@ const LOCATIONS = {
       writtenToLabel: "Written to Thessalonica",
       writtenToLat: 40.6401,
       writtenToLng: 22.9444,
-      approximateDate: "~50–51 AD",
+      approximateDate: "~AD 49–53",
       summary: "A follow-up to the first letter, addressing confusion about whether the Day of the Lord has already come — which some were using as an excuse to stop working and become disruptive. Paul clarifies what must happen first and gives the practical instruction: 'If any would not work, neither should he eat.'",
       keyVerse: "But ye, brethren, be not weary in well doing.",
       keyRef: "2 Thessalonians 3:13"
@@ -1097,7 +1132,7 @@ const LOCATIONS = {
       writtenToLabel: "Written to Philemon in Colossae",
       writtenToLat: 37.7700,
       writtenToLng: 29.1200,
-      approximateDate: "~60–62 AD",
+      approximateDate: "~AD 60–62",
       summary: "Paul's shortest letter — a personal appeal on behalf of Onesimus, a slave who ran away from his master Philemon, somehow ended up with Paul in prison, and became a Christian. Paul sends him back with this letter: receive him no longer as a slave, but as a dear brother. Paul offers to repay any debt. He is confident Philemon will do even more than he asks.",
       keyVerse: "For perhaps he therefore departed for a season, that thou shouldest receive him for ever; Not now as a servant, but above a servant, a brother beloved.",
       keyRef: "Philemon 1:15–16"

@@ -521,6 +521,35 @@
     nameEl.textContent = (ko && ko.name) || loc.name;
     document.getElementById('popup-modern-name').textContent = loc.modernName || '';
 
+    // Journey badge
+    const journeyEl = document.getElementById('popup-journey-badge');
+    if (journeyEl) {
+      if (loc.journey) {
+        journeyEl.textContent = loc.journey;
+        journeyEl.style.display = 'inline-block';
+        // Color-code by journey phase
+        const colors = {
+          'Early Church':             '#6DBF8A',
+          "Philip's Ministry":        '#A58FD4',
+          "Saul's Conversion":        '#D47070',
+          "Peter's Ministry":         '#70A8D4',
+          'The Church at Antioch':    '#C4A84A',
+          "Paul's First Missionary Journey":  '#F0A040',
+          'Jerusalem Council':                '#9A80CC',
+          "Paul's Second Missionary Journey": '#4AA8F0',
+          "Paul's Third Missionary Journey":  '#40CC8A',
+          "Paul's Arrest & Trials":   '#E07840',
+          'Journey to Rome':          '#E05050',
+        };
+        const c = colors[loc.journey] || '#aaa';
+        journeyEl.style.backgroundColor = c + '30';
+        journeyEl.style.borderColor = c;
+        journeyEl.style.color = c;
+      } else {
+        journeyEl.style.display = 'none';
+      }
+    }
+
     // Add "Read Bible" button to header (to the left of the ✕ close button)
     let readBtn = document.getElementById('read-bible-btn');
     if (!readBtn) {
@@ -683,12 +712,20 @@
       scriptureRef = loc.scriptureRef;
     }
 
-    // Right panel header ref
-    document.getElementById('popup-right-ref').textContent = kjvRef || '';
+    // Right panel header ref — show full passage ref for Acts, snippet ref otherwise
+    const headerRef = (scriptureRef && loc.section === 'acts')
+      ? `Acts ${scriptureRef.replace('Acts ', '')}`
+      : (kjvRef || '');
+    document.getElementById('popup-right-ref').textContent = headerRef;
 
-    if (kjvText) {
+    // Use full KJV Acts passage if available, otherwise fall back to snippet
+    if (scriptureRef && typeof getActsPassagePages === 'function' && loc.section === 'acts') {
+      const pages = getActsPassagePages(scriptureRef, 280);
+      renderScripturePages(pages, false, true);
+      document.getElementById('scripture-ref').textContent = `${fullLabel} ${scriptureRef}`;
+    } else if (kjvText) {
       const pages = paginateText(kjvText);
-      renderScripturePages(pages, true);
+      renderScripturePages(pages, true, false);
       let refText = `${kjvRef || ''} ${kjvLabel}`;
       if (scriptureRef) refText += `  ·  ${fullLabel} ${scriptureRef}`;
       document.getElementById('scripture-ref').textContent = refText;
@@ -1161,15 +1198,19 @@
     return pages;
   }
 
-  function renderScripturePages(pages, quoted) {
+  let scriptureIsHtml = false;
+
+  function renderScripturePages(pages, quoted, isHtml) {
     scripturePages = pages;
     scripturePage = 0;
+    scriptureIsHtml = !!isHtml;
     showScripturePage(quoted);
   }
 
   function resetScripturePages() {
     scripturePages = [];
     scripturePage = 0;
+    scriptureIsHtml = false;
     document.getElementById('scripture-page-nav').style.display = 'none';
   }
 
@@ -1180,12 +1221,17 @@
     const prevBtn = document.getElementById('scripture-prev-page');
     const nextBtn = document.getElementById('scripture-next-page');
 
-    const text = scripturePages[scripturePage] || '';
-    el.textContent = quoted ? `"${text}"` : text;
+    const content = scripturePages[scripturePage] || '';
+
+    if (scriptureIsHtml) {
+      el.innerHTML = content;
+    } else {
+      el.textContent = quoted ? `"${content}"` : content;
+    }
 
     if (scripturePages.length > 1) {
       navEl.style.display = 'flex';
-      numEl.textContent = `Page ${scripturePage + 1} of ${scripturePages.length}`;
+      numEl.textContent = `${scripturePage + 1} / ${scripturePages.length}`;
       prevBtn.disabled = scripturePage === 0;
       nextBtn.disabled = scripturePage === scripturePages.length - 1;
     } else {
@@ -1419,16 +1465,22 @@
     document.getElementById('mobile-drawer').setAttribute('aria-hidden', 'true');
   }
 
-  // ===== FOOTER EXPAND/COLLAPSE (click toggle for mobile) =====
+  // ===== FOOTER EXPAND/COLLAPSE =====
   function initFooter() {
     const footer = document.getElementById('site-footer');
+    const toggleBtn = document.getElementById('footer-toggle-btn');
     if (!footer) return;
-    footer.addEventListener('click', function(e) {
-      // Don't toggle if clicking a button or link inside
-      if (e.target.closest('button') || e.target.closest('a')) return;
-      footer.classList.toggle('expanded');
-    });
-    // Wire up the About button inside expanded footer
+
+    // Single toggle button — always in same position
+    if (toggleBtn) {
+      toggleBtn.addEventListener('click', function(e) {
+        e.stopPropagation();
+        const isExpanded = footer.classList.toggle('expanded');
+        toggleBtn.textContent = isExpanded ? '▲ Collapse' : '▼ Expand';
+      });
+    }
+
+    // About button inside expanded footer
     const expandedAboutBtn = footer.querySelector('.footer-about-btn');
     if (expandedAboutBtn) {
       expandedAboutBtn.addEventListener('click', openAbout);
@@ -1528,14 +1580,22 @@
 
       if (e.key === 'ArrowRight' || e.key === 'ArrowDown') {
         e.preventDefault();
-        if (isMulti && state.activeChapter < loc.chapters.length - 1) {
+        // First: go through scripture pages if right panel is open
+        if (state.rightPanelOpen && scripturePages.length > 1 && scripturePage < scripturePages.length - 1) {
+          scripturePage++;
+          showScripturePage(!scriptureIsHtml);
+        } else if (isMulti && state.activeChapter < loc.chapters.length - 1) {
           selectChapter(state.activeChapter + 1);
         } else {
           navigatePopup(1);
         }
       } else if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') {
         e.preventDefault();
-        if (isMulti && state.activeChapter > 0) {
+        // First: go back through scripture pages if right panel is open
+        if (state.rightPanelOpen && scripturePages.length > 1 && scripturePage > 0) {
+          scripturePage--;
+          showScripturePage(!scriptureIsHtml);
+        } else if (isMulti && state.activeChapter > 0) {
           selectChapter(state.activeChapter - 1);
         } else {
           navigatePopup(-1);
@@ -1552,10 +1612,10 @@
 
     // Scripture pagination buttons
     document.getElementById('scripture-prev-page').addEventListener('click', () => {
-      if (scripturePage > 0) { scripturePage--; showScripturePage(true); }
+      if (scripturePage > 0) { scripturePage--; showScripturePage(!scriptureIsHtml); }
     });
     document.getElementById('scripture-next-page').addEventListener('click', () => {
-      if (scripturePage < scripturePages.length - 1) { scripturePage++; showScripturePage(true); }
+      if (scripturePage < scripturePages.length - 1) { scripturePage++; showScripturePage(!scriptureIsHtml); }
     });
 
     // About modal
